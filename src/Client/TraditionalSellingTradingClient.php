@@ -16,7 +16,7 @@ use quocvu88\eBayAPI\TraditionalSelling\Trading\GetOrders;
  * Class TraditionalSellingTradingClient
  * @package quocvu88\eBayAPI
  */
-class TraditionalSellingTradingClient  extends Client
+class TraditionalSellingTradingClient extends Client
 {
 
     /**
@@ -33,10 +33,20 @@ class TraditionalSellingTradingClient  extends Client
      * Get Orders function
      *
      * @param $getOrdersParams
-     * @return void
+     * @return bool|\quocvu88\eBayAPI\Response
      * @author Vu Hoang (quocvu88@gmail.com)
      */
     public function getOrders($getOrdersParams){
         return $this->callFunction('quocvu88\eBayAPI\TraditionalSelling\Trading\GetOrders', $getOrdersParams);
+    }
+
+    /**
+     * Get Seller Dashboard function
+     *
+     * @return bool|\quocvu88\eBayAPI\Response
+     * @author Vu Hoang (quocvu88@gmail.com)
+     */
+    public function getSellerDashboard(){
+        return $this->callFunction('quocvu88\eBayAPI\TraditionalSelling\Trading\GetSellerDashboard', null);
     }
 }

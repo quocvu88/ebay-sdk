@@ -3,13 +3,9 @@
 This is SDK for PHP connect to eBay API.
 
 To install:
-Add this package to composer.json:
+Run this command
 ```
-{
-  "require": {
-    "quocvu88/ebay-sdk": "dev-master"
-  }
-}
+composer require quocvu88/ebay-sdk
 ```
 Quick Example:
 ```

@@ -95,7 +95,6 @@ class GetItem
     /**
      * Send Request function
      *
-     * @param $eBayUserID
      * @return \quocvu88\eBayAPI\Response
      * @author Vu Hoang - quocvu88
      */
