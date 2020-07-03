@@ -20,6 +20,7 @@ $config = [
     'siteID' => 0
 ];
 
+$token = 'Your-Store-Token';
 $client = new quocvu88\eBayAPI\Client\TraditionalSellingTradingClient($config, $token, 'array');
 $response = $client->getItem(
     [
